@@ -1,0 +1,53 @@
+
+def emp_details():
+    e = []
+    e.append(input('Enter Name:'))
+    e.append(int(input('Enter Salary:')))
+    return e
+
+
+def emp_insert(s):
+
+    id = int(input("Enter ID:"))
+    a = emp_details()
+    s[id] = a
+    print(s)
+    print("Emp Inserted Successfully")
+
+def emp_update(s):
+    id = int(input("Enter ID:"))
+    if id in s:
+        a=emp_details()
+        s[id]=a
+    print(s)
+    print("updated successfully")
+
+def emp_delete(s):
+    id = int(input("Enter ID:"))
+    if id in s:
+        del s[id]
+        print("Delted Sucessfully")
+    print(s)
+
+def dump_file(s):
+    data=str(s)
+    with open(r'/home/sanket/empdump.txt','w+')as file:
+        file.write(data)
+
+
+
+
+def main():
+    s = {}
+    while True:
+       ch=int(input())
+       if ch==1:
+           emp_insert(s)
+       if ch==2:
+           emp_update(s)
+       if ch==3:
+           emp_delete(s)
+       if ch==4:
+           dump_file(s)
+
+main()
