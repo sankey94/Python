@@ -1,0 +1,13 @@
+
+write below programs using functions
+    - find factorial of a number
+    - print a list of all odd number in a range
+    - reverse a string
+    - count the number of words and characters in file
+    - print a list of fibonacci series
+
+wrtie a program to perform CRUD operations on student database
+
+find a factorial using recursion
+
+find highest common factor for two numbers 
